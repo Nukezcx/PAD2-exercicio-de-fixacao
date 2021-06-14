@@ -24,3 +24,18 @@ segundaquestao(25,5, function(valor1,valor2){
 segundaquestao(10,2, function(valor1,valor2){
     return v1 * v2;
 }) 
+
+//3 - Crie uma função que recebe um parâmetro e uma callback que retorna uma outra função que recebe um parâmetro e chama essa callback que verifica se um número inteiro passado na primeira função como parâmetro é divisível por um outro numero passado pela função interna e retorne true ou false.
+function questao3(v1, callback) {
+ return function questao3_2(){
+     callback(v1,v2);
+ }
+}
+
+var questao3PegaValores = questao3(12, function (v1,v2){
+    if (v1 % v2 == 0) {
+        return true;
+    } else {return false};
+})
+
+questao3PegaValores(8);
