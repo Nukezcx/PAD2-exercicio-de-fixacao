@@ -86,3 +86,14 @@ function verificames (m){
 }
 
 verificames(5);
+
+//5 - Crie uma função que receba dois números e retorne se o primeiro é maior ou igual ao segundo dependendo da função Callback.
+function questao5(v1, v2, callback) {
+    console.log(callback(v1,v2));
+}
+
+questao5(40,23, function(v1,v2) {
+    if(v1 >= v2) {
+        return v1;
+    }
+})
